@@ -1,7 +1,7 @@
 PROJECT DETAILS
 
 - The application stands up from port 9091
-- Docker stands up from default port 8080
+- The application stands up with docker from default port 8080
 - H2 - in memory database was used. (In application.yml, the url can also be changed to mem, file, for persistence)
 - Java, SpringBoot, Spring Data Jpa, Spring Security, Hibernate, JUnit, Docker have been used in the project
 - Swagger added with auth - (The SecurityContext and ApiKey methods can be commented out to remove authentication in swagger in the SwaggerConfiguration class. Between lines 32 and 44)
