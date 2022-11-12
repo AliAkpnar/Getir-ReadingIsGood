@@ -11,3 +11,4 @@ PROJECT DETAILS
 - Unit tests were written with(JUNIT5 and MOCKITO) at Service and Controller levels
 - Integration test(Auth) was written.
 - Application has been dockerized.
+- Documentation and postman collection have been added under the resource folder.
