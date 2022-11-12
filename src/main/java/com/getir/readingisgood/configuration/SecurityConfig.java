@@ -6,7 +6,6 @@ import com.getir.readingisgood.security.JwtTokenFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -45,10 +44,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                     .and()
                 .authorizeRequests()
-                    //TODO: ACCESS NOT DENIED FOR NOW
-                    .antMatchers(HttpMethod.POST, "/api/v1/**").permitAll()
+/*                    .antMatchers(HttpMethod.POST, "/api/v1/**").permitAll()
                     .antMatchers(HttpMethod.GET, "/api/v1/**").permitAll()
-                    .antMatchers(HttpMethod.PATCH, "/api/v1/**").permitAll()
+                    .antMatchers(HttpMethod.PATCH, "/api/v1/**").permitAll()*/
                     .antMatchers("/api/v1/auth/**").permitAll()
                     .antMatchers("/v3/api-docs", "/configuration/**", "/swagger*/**", "/webjars/**", "/h2-console*/**")
                     .permitAll()
