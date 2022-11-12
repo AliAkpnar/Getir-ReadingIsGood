@@ -1,0 +1,9 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Getir
+    ports:
+      - 8080:9091
+    restart: always
